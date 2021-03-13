@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:12.3
+    environment:
+      POSTGRES_USER: "authorization"
+      POSTGRES_PASSWORD: "authorization"
+      POSTGRES_DB: "authorization"
+    ports:
+      - 5432:5432
