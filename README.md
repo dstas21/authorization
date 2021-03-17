@@ -1,29 +1,19 @@
-# README #
+# authorization-service
 
-This README would normally document whatever steps are necessary to get your application up and running.
+REST сервис для авторизации пользователей с помощью JWT токена
 
-### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+**Для поднятия базы данных необходимо перейти в терминале в корневой каталог репозитория и выполнить команду:**
+*  docker-compose up
 
-### How do I get set up? ###
+#### Библиотеки используемы в проекте:
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Название | Версия | Для чего используется
+---------------------|--------|--------------
+java                 |1.8     | Язык на котором написан сервис
+spring boot          |2.3.4   | Основной фреймворк, который упрощает разработку Rest сервиса и предоставляет огромный функционал для разработки и тестирования проекта
+lombok               |1.18.16 | Для автоматической генерации getter, setter, toString, equal и hashCode для сущностей
+validation           |2.0.1   | Для валидации полей в dto
+mapstruct            |1.4.1   | Для мапинга сущности в dto и наоборот
+postgresql           |        | База данных Postgres
+flywaydb             |        | Для автоматического добавление таблиц и ограницений к таблицам в базу данных через миграции
